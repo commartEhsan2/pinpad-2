@@ -19,29 +19,12 @@ Commart Pinpad is a WordPress plugin that provides a one-step login and registra
 ## Shortcodes
 - `[commart_pinpad]`: Use this shortcode to display the Pinpad interface on any post or page.
 
-## Admin Settings
-- **Default Username**: Set a default prefix for generated usernames.
-- **Custom CSS**: Add custom CSS styles for the Pinpad interface.
-- **Show Errors**: Enable or disable the display of error messages.
-- **Script Priority**: Set the priority of the plugin's scripts to resolve potential conflicts.
-
-## Security
-- The plugin includes measures to prevent brute force attacks and unauthorized access.
-- Mobile numbers are validated to ensure they start with '09'.
-- Users are blocked after repeated invalid attempts.
-
 ## Development
 ### File Structure
 - **commart-pinpad.php**: Main plugin file.
 - **includes/**: Contains additional PHP files for handling AJAX requests, security, and admin settings.
 - **css/**: Contains the main stylesheet for the Pinpad interface.
 - **js/**: Contains the main JavaScript file for handling Pinpad interactions.
-
-### Functions and Hooks
-- **AJAX Handlers**: Handles login and registration requests (`includes/ajax-handlers.php`).
-- **Security**: Implements security measures such as rate limiting and IP blocking (`includes/security.php`).
-- **Admin Settings**: Provides an interface for customizing the plugin's behavior and appearance (`includes/admin-settings.php`).
-- **Messages**: Manages customizable messages displayed to users (`includes/messages.php`).
 
 ## License
 This project is licensed under the GPLv2 License - see the [LICENSE](LICENSE) file for details.
